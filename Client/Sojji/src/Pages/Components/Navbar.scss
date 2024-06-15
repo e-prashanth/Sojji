@@ -1,0 +1,98 @@
+.NavbarContainer {
+  border-bottom: 2px solid rgb(112, 110, 110);
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  .leftContainer {
+    display: flex;
+    width: 30%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+    .LogoImage {
+      height: 40px;
+      width: 120px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .homeImage {
+      height: 24px;
+      width: 24px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .themeImage {
+      height: 20px;
+      width: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .menuImage {
+      height: 24px;
+      width: 24px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    input{
+        height: 25px;
+        width: 250px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border: 1px solid rgb(169, 167, 167);
+        // border-left: none;
+    }
+    .searchImage {
+      height: 20px;
+      width: 20px;
+    }
+    .searchbarContanier {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      padding-left: 10px;
+      gap:10px;
+      border:1px solid rgb(62, 61, 61);
+    }
+    @media (max-width:600px) {
+        display: none;
+    }
+  }
+  .rightContainer {
+    width: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:10px;
+    padding-right: 5px;
+    p {
+      margin: 0;
+      padding: 0;
+    }
+    .contactImage {
+      width: 24px;
+      height: 24px;
+    }
+    .messageImage {
+      width: 24px;
+      height: 24px;
+    }
+    .notificationImage {
+      width: 26px;
+      height: 26px;
+    }
+    // .profileImage{
+    //     height: 40px;
+    //     width: 35px;
+    // }
+    .profileContainer {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+}

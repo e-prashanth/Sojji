@@ -1,0 +1,116 @@
+.loginContainer {
+  font-family: "Times New Roman", Times, serif;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: rgb(193, 190, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .LogoImage{
+    height: 50px;
+    width: 150px;
+  }
+  .card {
+    background-color: rgb(193, 190, 255);
+    width: 50%;
+    border: black;
+    display: flex;
+    flex-direction: row;
+    min-height: 600px;
+    padding-top: 20px;
+      padding-bottom: 20px;
+    @media (max-width: 600px) {
+      height: 80%;
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+    }
+    .leftContainer {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      background: linear-gradient(rgb(39, 11, 96, 0.5), rgb(39, 11, 96, 0.5)),
+        url("bg.avif");
+      background-size: cover;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      padding: 50px;
+      gap: 30px;
+      color: white;
+      h1 {
+        font-size: 80px;
+        line-height: 80px;
+      }
+      p {
+        padding: 0px;
+        margin: 0px;
+      }
+
+      a {
+        text-decoration: none;
+        font-size: 15px;
+      }
+
+      button {
+        width: 50%;
+        text-align: center;
+        padding: 10px;
+        color: redeccapurple;
+        font-weight: bold;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+      }
+      @media (max-width: 600px) {
+        border-radius: 0px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+    }
+
+    .rigthContainer {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      padding: 50px;
+      background-color: white;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      gap: 30px;
+      justify-content: center;
+      h1 {
+        color: #555;
+        align-self: center;
+      }
+      .FormContiner {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        input {
+          //   width: 80%;
+          padding: 20px 10px;
+          border: none;
+          border-bottom: 1px solid lightgray;
+        }
+        button {
+          width: 50%;
+          padding: 10px;
+          color: white;
+          background-color: #938eef;
+          font-weight: bold;
+          border: none;
+          cursor: pointer;
+          border-radius: 5px;
+          align-self: center;
+        }
+      }
+      @media (max-width: 600px) {
+        border-radius: 0px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+    }
+  }
+}
